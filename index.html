@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Guees My Number</title>
-</head>
-<body>
-    <header>
-        <div class="left" id = "again">Again!</div>
-        <div class="right">(Between 1 and 20)</div>
-        <h1>guess my number</h1>
-        <div class="header-result">?</div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel = "icon" href = "guess-the-number.png" >
+        <title>Guees The Number</title>
+    </head>
 
-    <main>
-        <div class="left">
-            <input type="number" id ="input">
-            <button id="check">Check!</button>
-        </div>
-
-        <div class="right">
-            <div>
-                <p id="result">
-                    🏁 Start Gueesing...
-                </p>
-                <p id = "score">💯 Score: 20</p>
-                <p id = "high-score">🏅 Highscore: 0</p>
+    <body>
+        <header>
+            <div class = "reset-container">
+                <div class="left" id = "again">
+                    Again!
+                </div>
+    
+                <div class="right">
+                    (Between 1 and 20)
+                </div>
             </div>
-            
-        </div>
-    </main>
-    <script src="index.js"></script>
-</body>
+
+            <h1>guess my number</h1>
+
+            <div class = "header-result-container">
+                <div class="header-result">?</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left">
+                <div class = "number-input-container">
+                    Number: <input type="number" id ="input">
+                </div>
+                <button id="check">Check!</button>
+            </div>
+
+            <div class="right">
+                <div>
+                    <p id="result">
+                        🏁 Start Gueesing...
+                    </p>
+                    <p id = "score">💯 Score: 20</p>
+                    <p id = "high-score">🏅 Highscore: 0</p>
+                </div>
+                
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
 </html>

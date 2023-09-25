@@ -11,42 +11,28 @@
 
     <body>
         <header>
-            <div class = "reset-container">
-                <div class="left" id = "again">
-                    Again!
-                </div>
-    
-                <div class="right">
-                    (Between 1 and 20)
-                </div>
-            </div>
-
-            <h1>guess my number</h1>
-
-            <div class = "header-result-container">
-                <div class="header-result">?</div>
-            </div>
+            <h1>Guess The Number</h1>
         </header>
 
-        <main>
-            <div class="left">
-                <div class = "number-input-container">
-                    Number: <input type="number" id ="input">
-                </div>
-                <button id="check">Check!</button>
-            </div>
 
-            <div class="right">
-                <div>
-                    <p id="result">
-                        🏁 Start Gueesing...
-                    </p>
-                    <p id = "score">💯 Score: 20</p>
-                    <p id = "high-score">🏅 Highscore: 0</p>
-                </div>
-                
+        <main>
+            <div class = "instructions">
+                <p>Try and Guess a random number between 1 and 100</p>
+                <p>You have 10 attempts to guess the right number.</p>
             </div>
+            <form class = "guess-form">
+                <input class = "guess-input" type = "text">
+                <button class = "submit-btn btn" type = "submit">Submit Guess</button>
+            </form>
+
+            <div class = "response-container">
+                <p>Previous Guesses: <span class = "previous-guesses">[]</span></p>
+                <p>Remaining Guesses: <span class = "remaining-guesses">10</span></p>
+                <p class = "response-message"></p>
+            </div>
+            <button class = "play-again-btn btn">Play again!</button>
         </main>
+
         <script src="index.js"></script>
     </body>
 </html>
